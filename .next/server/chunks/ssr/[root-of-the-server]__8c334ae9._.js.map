@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":["file:///Users/paoloauletta/Documents/MaturaMate/maturamate-clean/src/auth.ts"],"sourcesContent":["import NextAuth from \"next-auth\";\nimport GitHub from \"next-auth/providers/github\";\nimport Google from \"next-auth/providers/google\";\n\nexport const { handlers, signIn, signOut, auth } = NextAuth({\n  providers: [GitHub, Google],\n});\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;AACA;AAAA;AACA;AAAA;;;;AAEO,MAAM,EAAE,QAAQ,EAAE,MAAM,EAAE,OAAO,EAAE,IAAI,EAAE,GAAG,CAAA,GAAA,qJAAA,CAAA,UAAQ,AAAD,EAAE;IAC1D,WAAW;QAAC,qJAAA,CAAA,UAAM;QAAE,qJAAA,CAAA,UAAM;KAAC;AAC7B","debugId":null}},
+    {"offset": {"line": 59, "column": 0}, "map": {"version":3,"sources":["file:///Users/paoloauletta/Documents/MaturaMate/maturamate-clean/src/app/page.tsx"],"sourcesContent":["import { signIn, signOut } from \"@/auth\";\nimport Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div>\n      <button onClick={() => signIn()}>Sign In</button>\n      <button onClick={() => signOut()}>Sign Out</button>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAGe,SAAS;IACtB,qBACE,8OAAC;;0BACC,8OAAC;gBAAO,SAAS,IAAM,CAAA,GAAA,2GAAA,CAAA,SAAM,AAAD;0BAAK;;;;;;0BACjC,8OAAC;gBAAO,SAAS,IAAM,CAAA,GAAA,2GAAA,CAAA,UAAO,AAAD;0BAAK;;;;;;;;;;;;AAGxC","debugId":null}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/paoloauletta/Documents/MaturaMate/maturamate-clean/src/app/dashboard/layout.tsx"],"sourcesContent":["export const navLinks = [\n  {\n    name: \"Dashboard\",\n    href: \"/dashboard\",\n    icon: Home,\n  },\n  {\n    name: \"Teoria\",\n    href: \"/dashboard/teoria\",\n    icon: Book,\n  },\n  {\n    name: \"Esercizi\",\n    href: \"/dashboard/esercizi\",\n    icon: BookOpen,\n  },\n  {\n    name: \"Simulazioni\",\n    href: \"/dashboard/simulazioni\",\n    icon: ClipboardCheck,\n  },\n  {\n    type: \"divider\",\n    label: \"Il Tuo Studio\",\n  },\n  {\n    name: \"Tutor\",\n    href: \"/dashboard/tutor\",\n    icon: Bot,\n  },\n  {\n    name: \"Preferiti\",\n    href: \"/dashboard/preferiti\",\n    icon: Star,\n  },\n  {\n    name: \"Statistiche\",\n    href: \"/dashboard/statistiche\",\n    icon: ChartNoAxesColumn,\n  },\n];\n"],"names":[],"mappings":";;;AAAO,MAAM,WAAW;IACtB;QACE,MAAM;QACN,MAAM;QACN,MAAM;IACR;IACA;QACE,MAAM;QACN,MAAM;QACN,MAAM;IACR;IACA;QACE,MAAM;QACN,MAAM;QACN,MAAM;IACR;IACA;QACE,MAAM;QACN,MAAM;QACN,MAAM;IACR;IACA;QACE,MAAM;QACN,OAAO;IACT;IACA;QACE,MAAM;QACN,MAAM;QACN,MAAM;IACR;IACA;QACE,MAAM;QACN,MAAM;QACN,MAAM;IACR;IACA;QACE,MAAM;QACN,MAAM;QACN,MAAM;IACR;CACD","debugId":null}}]
+}

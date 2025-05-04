@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 47, "column": 0}, "map": {"version":3,"sources":["file:///Users/paoloauletta/Documents/MaturaMate/maturamate-clean/src/auth.ts"],"sourcesContent":["import NextAuth from \"next-auth\";\nimport GitHub from \"next-auth/providers/github\";\nimport Google from \"next-auth/providers/google\";\n\nexport const { handlers, signIn, signOut, auth } = NextAuth({\n  providers: [GitHub, Google],\n});\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;AACA;AAAA;AACA;AAAA;;;;AAEO,MAAM,EAAE,QAAQ,EAAE,MAAM,EAAE,OAAO,EAAE,IAAI,EAAE,GAAG,CAAA,GAAA,qJAAA,CAAA,UAAQ,AAAD,EAAE;IAC1D,WAAW;QAAC,qJAAA,CAAA,UAAM;QAAE,qJAAA,CAAA,UAAM;KAAC;AAC7B","debugId":null}},
+    {"offset": {"line": 74, "column": 0}, "map": {"version":3,"sources":["file:///Users/paoloauletta/Documents/MaturaMate/maturamate-clean/src/app/components/auth/sign-in.tsx"],"sourcesContent":["\"use client\";\n\nimport { signIn } from \"@/auth\";\n\nexport default function SignIn() {\n  return (\n    <div className=\"flex flex-col gap-4\">\n      <button onClick={() => signIn(\"google\")}>Sign In with Google</button>\n      <button onClick={() => signIn(\"github\")}>Sign In with Github</button>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;gBAAO,SAAS,IAAM,CAAA,GAAA,2GAAA,CAAA,SAAM,AAAD,EAAE;0BAAW;;;;;;0BACzC,8OAAC;gBAAO,SAAS,IAAM,CAAA,GAAA,2GAAA,CAAA,SAAM,AAAD,EAAE;0BAAW;;;;;;;;;;;;AAG/C","debugId":null}}]
+}

@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":["file:///Users/paoloauletta/Documents/MaturaMate/maturamate-clean/src/auth.ts"],"sourcesContent":["import NextAuth from \"next-auth\";\nimport GitHub from \"next-auth/providers/github\";\nimport Google from \"next-auth/providers/google\";\n\nexport const { handlers, signIn, signOut, auth } = NextAuth({\n  providers: [GitHub, Google],\n});\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;AACA;AAAA;AACA;AAAA;;;;AAEO,MAAM,EAAE,QAAQ,EAAE,MAAM,EAAE,OAAO,EAAE,IAAI,EAAE,GAAG,CAAA,GAAA,qJAAA,CAAA,UAAQ,AAAD,EAAE;IAC1D,WAAW;QAAC,qJAAA,CAAA,UAAM;QAAE,qJAAA,CAAA,UAAM;KAAC;AAC7B","debugId":null}},
+    {"offset": {"line": 59, "column": 0}, "map": {"version":3,"sources":["file:///Users/paoloauletta/Documents/MaturaMate/maturamate-clean/src/app/dashboard/page.tsx"],"sourcesContent":["import { auth } from \"@/auth\";\nimport { redirect } from \"next/navigation\";\n\nexport default async function Dashboard() {\n  const session = await auth();\n\n  if (!session) {\n    redirect(\"/?callbackUrl=/dashboard\");\n  }\n\n  return (\n    <div>\n      <h1>Dashboard</h1>\n      <p>{JSON.stringify(session?.user, null, 2)}</p>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;AACA;AAAA;;;;AAEe,eAAe;IAC5B,MAAM,UAAU,MAAM,CAAA,GAAA,2GAAA,CAAA,OAAI,AAAD;IAEzB,IAAI,CAAC,SAAS;QACZ,CAAA,GAAA,qLAAA,CAAA,WAAQ,AAAD,EAAE;IACX;IAEA,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAG,KAAK,SAAS,CAAC,SAAS,MAAM,MAAM;;;;;;;;;;;;AAG9C","debugId":null}}]
+}

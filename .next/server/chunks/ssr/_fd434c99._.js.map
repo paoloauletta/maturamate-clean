@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/paoloauletta/Documents/MaturaMate/maturamate-clean/src/app/page.tsx"],"sourcesContent":["\"use server\";\nimport { signIn } from \"./auth\";\n\nexport async function SignIn() {\n  return await signIn(\"google\");\n}\n"],"names":[],"mappings":";;;;;;;;;;;;;;AAGO,eAAe;IACpB,OAAO,MAAM,OAAO;AACtB;;;IAFsB;;AAAA,+OAAA","debugId":null}},
+    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":["file:///Users/paoloauletta/Documents/MaturaMate/maturamate-clean/.next-internal/server/app/page/actions.js%20%28server%20actions%20loader%29"],"sourcesContent":["export {SignIn as '0017fb80d52c73e1ebc3acf39cdf85878487b61804'} from 'ACTIONS_MODULE0'\n"],"names":[],"mappings":";AAAA","debugId":null}}]
+}
